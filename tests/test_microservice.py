@@ -8,7 +8,7 @@ Tests the the service returns the expected responses .
 import json
 import unittest
 
-from microservice.api import app
+from app.app import app
 
 
 class TestMicroserviceAPI(unittest.TestCase):
