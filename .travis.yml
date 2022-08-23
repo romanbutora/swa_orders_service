@@ -1,0 +1,19 @@
+os:
+  - linux
+
+dist: xenial
+
+language: python
+
+script:
+  - python -m pytest -v
+
+env:
+  global:
+    - PORT=5000
+    - MONGO_URI=mongodb://localhost/mongodb
+    - MONGO_URI_TESTS=mongodb://localhost/mongodb
+    - EMAIL_PORT=587
+    - EMAIL_HOST=smtp-relay.sendinblue.com
+    - EMAIL_USERNAME=smtp-username
+    - EMAIL_PASSWORD=smtp-password
