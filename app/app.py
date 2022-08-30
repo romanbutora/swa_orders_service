@@ -8,7 +8,7 @@ import uuid
 from datetime import datetime
 
 application = Flask(__name__)
-
+#
 application.config["MONGO_URI"] = os.environ['MONGO_URI']
 # application.config["MONGO_URI"] = "mongodb://localhost:27017/users-service"
 mongo = PyMongo(application)
